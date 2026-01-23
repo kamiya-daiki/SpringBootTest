@@ -3,5 +3,12 @@ spring:
     url: jdbc:postgresql://localhost:5432/postgres
     username: postgres
     password: kamiya
+    driver-class-name: org.postgresql.Driver
   thymeleaf:
     cache: false
+logging:
+  level:
+    org:
+      springframework:
+        jdbc:
+          core: DEBUG
